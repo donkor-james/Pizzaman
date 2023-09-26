@@ -14,7 +14,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ['beyond_the_mountainsregular', 'sans'], // Replace 'MyCustomFont' with the font name you defined
+      },
+    },
   },
   plugins: [],
 }
