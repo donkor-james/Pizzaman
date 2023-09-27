@@ -1,8 +1,8 @@
 import React from 'react';
-import hero from './../assets/hero-pattern.jpg'
+import hero from './../assets/footerImg.jpg'
 const Hero = () => {
   return (
-    <div className='relative w-screen h-screen overflow-y-hidden'>
+    <div className='relative  h-screen overflow-x-hidden'>
       <div className="absolute top-0 left-0 w-full h-full "
         style={{
             backgroundImage: `url(${hero})`,
