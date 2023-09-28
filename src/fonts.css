@@ -1,0 +1,8 @@
+/* fonts.css */
+@font-face {
+    font-family: 'fa-Brands';
+    src: url('/fonts/fa-Brands-400.woff2') format('otf'); /* Adjust the file path accordingly */
+    font-weight: normal;
+    font-style: normal;
+  }
+  

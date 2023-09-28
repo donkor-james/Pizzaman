@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../src/assets/carousel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.about{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../src/assets/new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.counting{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/plantain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.carousel{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/carousel2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.car{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/near4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
