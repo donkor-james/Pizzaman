@@ -16,7 +16,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['beyond_the_mountainsregular', 'sans'], // Replace 'MyCustomFont' with the font name you defined
+        custom: ['beyond_the_mountains', 'sans'], // Replace 'MyCustomFont' with the font name you defined
       },
     },
   },
