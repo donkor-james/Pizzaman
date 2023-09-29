@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 .branches{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../src/assets/Branches2_img.jpg");
     background-repeat: no-repeat;
@@ -20,3 +21,39 @@
 
 
 
+=======
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../src/assets/carousel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.about{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../src/assets/new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.counting{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/plantain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.carousel{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/carousel2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.car{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/assets/near4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+>>>>>>> 39394279598468e46c3866d57fb2c7ebe64c0e0f

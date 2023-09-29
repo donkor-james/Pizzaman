@@ -19,8 +19,8 @@ export default {
     extend: {
       colors: {
         reddish: "rgb(228, 18, 46)",
-      },
-    },
+      }
+    }
   },
   plugins: [],
 };
