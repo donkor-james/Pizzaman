@@ -4,9 +4,12 @@ import TrucksBranch from "../../Data/Trucks";
 const Trucks = ({displayAccra, displayKumasi, displayTrucks}) => {
     return (
         <>
-            <div className=' flex justify-center mt-20'>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='flex text-slate-900 justify-center text-[17px] font-medium border-b-2 border-red-600 gap-5 md:px-20 min-w-[40vw]'>
+            <div className=' flex justify-center'>
+                <div className='flex flex-col justify-center items-center mt-36'>
+                        <div className=' text-3xl'>
+                            Our Branches & Trucks
+                        </div>
+                    <div className='flex mt-12 text-slate-900 justify-center text-[17px] font-medium border-b-2 border-red-600 gap-5 md:px-20 min-w-[40vw]'>
                         <div className=' text-slate-900 rounded-[3px] px-6 py-3 hover:bg-reddish hover:text-white cursor-pointer' onClick={displayAccra}>
                             Accra
                         </div>

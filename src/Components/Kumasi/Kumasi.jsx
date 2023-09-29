@@ -6,9 +6,12 @@ const Kumasi = ({displayAccra, displayKumasi, displayTrucks}) => {
 
     return (
         <>
-            <div className='mt-20'>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='flex text-slate-900 justify-center text-[17px] font-medium border-b-2 border-red-600 gap-5 md:px-20 min-w-[40vw]'>
+            <div className=' flex justify-center'>
+                <div className='flex flex-col justify-center items-center mt-36'>
+                        <div className=' text-3xl'>
+                            Our Branches & Trucks
+                        </div>
+                    <div className='flex mt-12 text-slate-900 justify-center text-[17px] font-medium border-b-2 border-red-600 gap-5 md:px-20 min-w-[40vw]'>
                         <div className='rounded-t-[3px] text-slate-900 px-6 py-3 hover:bg-reddish hover:text-white cursor-pointer' onClick={displayAccra}>
                             Accra
                         </div>

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-<<<<<<< HEAD
 import viteLogo from '/vite.svg'
 import Services from './Components/Branches/Branches'
 import './App.css'
@@ -7,7 +6,6 @@ import { NavLink } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Branches from './Components/Branches/Branches'
 import Contact from './Pages/Contact/Contact'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Navbar from './components/Navbar'
 

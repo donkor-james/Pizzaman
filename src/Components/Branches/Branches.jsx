@@ -1,9 +1,10 @@
-import NavBar from "../NavBar/Navbar";
+import NavBar from "../Navbar";
 import '../../../src/index.css'
 import Accra from "../Accra/Accra";
 import Kumasi from "../Kumasi/Kumasi";
 import Trucks from "../Trucks/Trucks";
 import { useState } from "react";
+import Footer from "../Footer";
 
 const Branches = () =>
 {
@@ -30,15 +31,18 @@ const Branches = () =>
     return (
         <>
 
-            <header className="branches h-[27rem]">
-                <div className="branch_text">
+            <header className="branches flex flex-col h-[27rem]">
+                <div>
+                    <NavBar />
+                </div>    
+                <div className="branch_text text-center mt-14">
                     <div className=" text-4xl text-white">
                         Our Branches
                     </div>
                 </div>
             </header>
 
-            <div className="flex justify-center">
+            <div className="flex mb-32 justify-center">
                 <div className={hideAccra}>
                     <Accra displayAccra={displayAccra} displayKumasi={displayKumasi} displayTrucks={displayTrucks}/>
                 </div>
@@ -48,6 +52,10 @@ const Branches = () =>
                 <div className={hideTrucks}>
                     <Trucks displayAccra={displayAccra} displayKumasi={displayKumasi} displayTrucks={displayTrucks}/>
                 </div>
+            </div >
+
+            <div>
+                <Footer />
             </div>
 
         </>

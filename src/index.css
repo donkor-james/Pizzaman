@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 .branches{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../src/assets/Branches2_img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .accra_branch,.kumasi, .trucks, .kumasi:hover, .tracks:hover
@@ -19,9 +16,6 @@
   color: white;
 }
 
-
-
-=======
 .hero{
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../src/assets/carousel.jpg');
     background-repeat: no-repeat;
@@ -56,4 +50,3 @@
     background-size: cover;
     background-position: 100%;
 }
->>>>>>> 39394279598468e46c3866d57fb2c7ebe64c0e0f

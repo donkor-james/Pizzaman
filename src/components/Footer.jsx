@@ -7,7 +7,7 @@ import {FaInstagram} from 'react-icons/fa'
 import SellersData from '../Data/Sellers'
 const Footer = () => {
   return (
-    <div className='relative  pb-20 mt-20'>
+    <div className='relative  pb-20'>
       <div className="absolute top-0 left-0 h-full w-full  overflow-x-hidden"
         style={{
             backgroundImage: `url(${footer})`,
