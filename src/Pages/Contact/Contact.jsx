@@ -1,8 +1,21 @@
 import Footer from "../../Components/Footer";
+import '../../../src/index.css'
+import Navbar from "../../Components/Navbar";
 
 const Contact = () => {
     return(
         <>
+            <header className="contact flex flex-col items-center h-[350px]">
+                <div className="-mt-3">
+                    <Navbar />
+                </div>
+                <div className=" flex items-center justify-center text-center">
+                    <div className=" text-4xl text-white mt-10"> 
+                        Contact Us
+                    </div>
+                </div>
+            </header>
+
             <div className=" bg-white">
                 <div className="flex flex-col items-center">
                     <div className=" mt-28">

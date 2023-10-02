@@ -31,9 +31,11 @@ const Kumasi = ({displayAccra, displayKumasi, displayTrucks}) => {
                                         {kumasi.location}
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
-                                        <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
-                                            {kumasi.btn}
-                                        </button>
+                                        <a className=' w-full' href={kumasi.map} id={kumasi.id} target='_blank'>
+                                            <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
+                                                {kumasi.btn}
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

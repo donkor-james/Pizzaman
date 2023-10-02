@@ -29,9 +29,11 @@ const Accra = ({displayAccra, displayKumasi, displayTrucks}) => {
                                         {accra.location}
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
-                                        <button className=' w-full text-reddish hover:bg-reddish hover:text-white'>
-                                            {accra.btn}
-                                        </button>
+                                        <a className='w-full' href={accra.map} id={accra.id} target='_blank'>
+                                            <button className=' w-full text-reddish hover:bg-reddish hover:text-white'>
+                                                {accra.btn}
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
