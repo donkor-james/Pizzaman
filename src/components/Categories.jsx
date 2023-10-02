@@ -10,7 +10,7 @@ const Categories = ({filterItems}) => {
   return (
     <div className='mt-8'>
 
-      <button className='border-2 border-red-600 px-7 py-1 hover:bg-red-700 hover:text-white' onClick={() => handleFilter('')}>All</button>
+      <button className='border-2 border-red-600 px-7 py-1 hover:bg-red-700 hover:text-white' onClick={() => handleFilter('')}>Allll</button>
       <button className='border-2 border-red-600 px-7 py-1 hover:bg-red-700 hover:text-white' onClick={() => handleFilter('pizza')}>Pizza</button>
       <button className='border-2 border-red-600 px-7 py-1 ml-4 hover:bg-red-700 hover:text-white' onClick={() => handleFilter('pasta')}>Pasta</button>
       <button className='border-2 border-red-600 px-7 py-1 ml-4 hover:bg-red-700 hover:text-white' onClick={() => handleFilter('desserts')}>Dessert</button>
