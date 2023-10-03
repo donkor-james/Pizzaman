@@ -39,21 +39,25 @@ const Kumasi = [
     id: 7,
     location: "KNUST (Annex)",
     btn: "Read More",
+    map: "https://maps.app.goo.gl/zNDZ3YF8bifpifgG6",
   },
   {
     id: 8,
     location: "Tanoso Branch",
     btn: "Read More",
+    map: "https://maps.app.goo.gl/7rHYaBypRD2XoB1c9",
   },
   {
     id: 9,
     location: "Santasi Branch",
     btn: "Read More",
+    map: "",
   },
   {
     id: 10,
     location: "Fawoade Branch",
     btn: "Read More",
+    map: "",
   },
 ];
 

@@ -1,7 +1,14 @@
 import '../../../src/index.css'
 import AccraBranch from "../../Data/Accra";
+import {Link} from 'react-router-dom'
+import Map from '../BranchMap/BranchMap'
 
 const Accra = ({displayAccra, displayKumasi, displayTrucks}) => {
+
+    const handleClick = (map) => {
+        sessionStorage.setItem("map", map)
+    }
+
     return (
         <>
                       <div className=' flex justify-center'>
@@ -22,18 +29,18 @@ const Accra = ({displayAccra, displayKumasi, displayTrucks}) => {
                     </div>
 
                     <div className=' flex flex-wrap justify-center mt-10 gap-14'>
-                        {AccraBranch.map((accra) => (       
-                            <div id={accra.id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
+                        {AccraBranch.map(({id, location, map, btn}, index) => (       
+                            <div id={id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
                                 <div className=' flex flex-col items-center text-center mt-6'>
                                     <div className=' text-2xl text-white'>
-                                        {accra.location}
+                                        {location}
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
-                                        <a className='w-full' href={accra.map} id={accra.id} target='_blank'>
-                                            <button className=' w-full text-reddish hover:bg-reddish hover:text-white'>
-                                                {accra.btn}
+                                        <Link to='/map'>
+                                            <button className=' w-full text-reddish hover:bg-reddish hover:text-white' onClick={() => handleClick(map)}>
+                                                {btn}
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

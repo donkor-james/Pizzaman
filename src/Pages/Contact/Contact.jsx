@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
 
                     <div className=" mt-7 mb-8">
-                        <input className=" w-36 md:w-[14vw] h-10 text-white rounded-md bg-reddish" type="submit" value="Submit" />
+                        <input className=" w-36 md:w-[14vw] h-10 text-white rounded-md bg-reddish cursor-pointer" type="submit" value="Submit" />
                     </div>
 
                 </div>

@@ -3,7 +3,7 @@ const Accra = [
     id: 1,
     location: "Adenta Branch",
     btn: "Read More",
-    map: "https://maps.app.goo.gl/AocB9Z7UGmkjnjsb8",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.993176040858!2d-0.19899974458008865!3d5.713380300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d16ca1a19cf%3A0x4136cd8c520bb97f!2sPizzaman~Chickenman%20Adenta!5e0!3m2!1sen!2sgh!4v1696348067304!5m2!1sen!2sgh",
   },
   {
     id: 2,
