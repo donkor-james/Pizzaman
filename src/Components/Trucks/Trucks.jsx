@@ -1,5 +1,6 @@
 import '../../../src/index.css'
 import TrucksBranch from "../../Data/Trucks";
+import {Link} from 'react-router-dom'
 
 const Trucks = ({displayAccra, displayKumasi, displayTrucks}) => {
     return (
@@ -22,17 +23,19 @@ const Trucks = ({displayAccra, displayKumasi, displayTrucks}) => {
                     </div>
 
                     <div className=' flex flex-wrap justify-center mt-10 gap-14'>
-                        {TrucksBranch.map((Trucks) => (       
-                            <div id={Trucks.id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
+                        {TrucksBranch.map(({id, location, map, btn}, index) => (       
+                            <div id={id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
                                 <div className=' flex flex-col items-center text-center mt-6'>
                                     <div className=' text-2xl text-white'>
-                                        {Trucks.location}
+                                        {location}
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
-                                        <a className=' w-full' href={Trucks.map} id={Trucks.id} target='_blank'>
-                                            <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
-                                                {Trucks.btn}
-                                            </button>
+                                        <a className=' w-full' href={map} id={id} target='_blank'>
+                                            <Link to='/map'>
+                                                <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
+                                                    {btn}
+                                                </button>
+                                            </Link>
                                         </a>
                                     </div>
                                 </div>

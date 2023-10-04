@@ -13,14 +13,14 @@ export default {
   theme: {
     screens: {
       lg: "976px",
-      md: "756px",
+      md: "786px",
       sm: "520px",
     },
     extend: {
       colors: {
         reddish: "rgb(228, 18, 46)",
-      }
-    }
+      },
+    },
   },
   plugins: [],
 };

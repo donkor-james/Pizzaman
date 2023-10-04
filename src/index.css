@@ -8,6 +8,12 @@
     background-size: cover;
     background-position: 100%;
 }
+.map{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("../src/assets/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
 
 .contact{
     background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.7)), url('../src/assets/serviceImg.jpg');

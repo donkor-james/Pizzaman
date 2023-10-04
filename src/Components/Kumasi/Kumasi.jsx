@@ -1,8 +1,12 @@
 import '../../../src/index.css'
 import KumasiBranch from "../../Data/Kumasi";
+import {Link} from 'react-router-dom'
 
 const Kumasi = ({displayAccra, displayKumasi, displayTrucks}) => {
 
+    const handleClick = (map) => {
+        sessionStorage.setItem("map", map)
+    }
 
     return (
         <>
@@ -24,17 +28,19 @@ const Kumasi = ({displayAccra, displayKumasi, displayTrucks}) => {
                     </div>
 
                     <div className=' flex flex-wrap justify-center mt-10 gap-14'>
-                        {KumasiBranch.map((kumasi) => (       
-                            <div id={kumasi.id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
+                        {KumasiBranch.map(({id, location, map, btn}, index) => (       
+                            <div id={id} className=' flex justify-center items-center bg-slate-900 w-72 h-48 border'>
                                 <div className=' flex flex-col items-center text-center mt-6'>
                                     <div className=' text-2xl text-white'>
-                                        {kumasi.location}
+                                        {location}
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
-                                        <a className=' w-full' href={kumasi.map} id={kumasi.id} target='_blank'>
-                                            <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
-                                                {kumasi.btn}
-                                            </button>
+                                        <a className=' w-full' href={map} id={id} target='_blank'>
+                                            <Link to='/map'>
+                                                <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
+                                                    {btn}
+                                                </button>
+                                            </Link>
                                         </a>
                                     </div>
                                 </div>

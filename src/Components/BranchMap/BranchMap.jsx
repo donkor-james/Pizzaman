@@ -1,22 +1,27 @@
 import Accra from "../Accra/Accra";
+import NavBar from "../Navbar";
 import Footer from "../Footer";
 
 const BranchMap = ({}) => {
     const map = sessionStorage.getItem("map")
+    const loc = sessionStorage.getItem("loc")
     return(
         <>
         <div className=" bg-white">
-            <header className=" flex justify-center h-56 border-4 bg-slate-600">
-                <div className=" flex items-center">
-                    <div className=" text-3xl">Branch</div>
+            <header className="map flex flex-col items-center h-[350px] bg-slate-600">
+                <div className="-mt-1">
+                    <NavBar />
+                </div>
+                <div className=" flex items-center mt-6">
+                    <div className=" text-4xl text-white">{loc}</div>
                 </div>
             </header>
-            <div className=" bg-white mb-24">
-                <div className=" flex h-44 mt-32">
-                    <div className="b_wrapper w-full h-56 pt-4 bg-slate-100">
-                        <div className=" flex flex-col mt-2 ml-8 border-2">
-                            <div className=" text-2xl mt-2">Accra - Ghana</div>
-                            <div className=" flex flex-col gap-2 mt-4">
+            <div className=" flex justify-center bg-white mt-20 mb-28 ">
+                <div className=" flex flex-wrap-reverse flex-col-reverse w-[85vw] md:w-full md:flex-row gap-10 mx-10">
+                    <div className="b_wrapper h-64 pt-4 bg-slate-100">
+                        <div className=" flex flex-col mt-4 ml-8">
+                            <div className=" text-2xl">Accra - Ghana</div>
+                            <div className=" flex flex-col gap-4 mt-8">
                                 <div>
                                     <img src="" alt="" />
                                     <div className=" text-[15px] text-slate-700">
@@ -38,14 +43,15 @@ const BranchMap = ({}) => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="">
-                        <iframe className=" h-80 w-64" height={500} src={map} frameborder="0"></iframe>
+                    <div className=" h-[360px] w-full md:w-full"> 
+                        <iframe className=" w-full h-full" src={map} frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
 
-            <Footer />
+            <div className=" ">
+                <Footer />
+            </div>
 
         </div>
         </>

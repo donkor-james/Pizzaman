@@ -5,8 +5,9 @@ import Map from '../BranchMap/BranchMap'
 
 const Accra = ({displayAccra, displayKumasi, displayTrucks}) => {
 
-    const handleClick = (map) => {
+    const handleClick = (name, map) => {
         sessionStorage.setItem("map", map)
+        sessionStorage.setItem("loc", name)
     }
 
     return (
@@ -37,7 +38,7 @@ const Accra = ({displayAccra, displayKumasi, displayTrucks}) => {
                                     </div>
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
                                         <Link to='/map'>
-                                            <button className=' w-full text-reddish hover:bg-reddish hover:text-white' onClick={() => handleClick(map)}>
+                                            <button className=' w-full text-reddish hover:bg-reddish hover:text-white' onClick={() => handleClick(location, map)}>
                                                 {btn}
                                             </button>
                                         </Link>
