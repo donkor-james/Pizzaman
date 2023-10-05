@@ -21,7 +21,7 @@ const BranchMap = ({}) => {
             </header>
             <div className=" flex justify-center bg-white mt-20 mb-28 ">
                 <div className=" flex flex-wrap-reverse flex-col-reverse w-[85vw] md:w-full md:flex-row gap-10 mx-10">
-                    <div className="b_wrapper flex h-64 pt-4 bg-slate-100">
+                    <div className="b_wrapper flex h-[285px] md:h-64 pt-4 px-2 bg-slate-100">
                         <div className=" flex flex-col mt-4 ml-8">
                             <div className=" text-2xl">Accra - Ghana</div>
                             <div className=" flex flex-col gap-4 mt-8">
@@ -40,7 +40,7 @@ const BranchMap = ({}) => {
                                 <div className=" flex flex-wrap gap-2">
                                     <img className=" w-5 h-5" src={Time} alt=""/>
                                     <div className=" text-base mr-3">
-                                        Mon-Sun: 10:00am - 12:00am(Mid-night)
+                                        Mon-Sun: 10:00am - 12:00am
                                     </div>
                                 </div>
                             </div>
