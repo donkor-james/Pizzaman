@@ -3,6 +3,10 @@ import TrucksBranch from "../../Data/Trucks";
 import {Link} from 'react-router-dom'
 
 const Trucks = ({displayAccra, displayKumasi, displayTrucks}) => {
+    const handleClick = (name, map) => {
+        sessionStorage.setItem("map", map)
+        sessionStorage.setItem("loc", name)
+    }
     return (
         <>
             <div className=' flex justify-center'>
@@ -32,7 +36,7 @@ const Trucks = ({displayAccra, displayKumasi, displayTrucks}) => {
                                     <div className=' text-lg mt-3 w-32 border-[1.5px] rounded-sm hover:border-red-700'>
                                         <a className=' w-full' href={map} id={id} target='_blank'>
                                             <Link to='/map'>
-                                                <button className=' w-full text-reddish  hover:bg-reddish hover:text-white'>
+                                                <button className=' w-full text-reddish  hover:bg-reddish hover:text-white' onClick={() => handleClick(location, map)}>
                                                     {btn}
                                                 </button>
                                             </Link>

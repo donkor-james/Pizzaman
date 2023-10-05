@@ -9,7 +9,7 @@ const Kumasi = [
     id: 2,
     location: "Ahodwo Branch",
     btn: "Read More",
-    map: "",
+    map: "https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d126810.22473921873!2d-1.6999756437270208!3d6.669272864842645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.669784399999999!2d-1.6168915!4m5!1s0xfdb97072401d351%3A0x8e8c7daf028348a7!2sAhodwo%20Circle%2C%20Kumasi!3m2!1d6.6692797!2d-1.6175737!5e0!3m2!1sen!2sgh!4v1696513444781!5m2!1sen!2sgh",
   },
   {
     id: 3,
@@ -51,13 +51,13 @@ const Kumasi = [
     id: 9,
     location: "Santasi Branch",
     btn: "Read More",
-    map: "",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15851.118647551844!2d-1.6594777!3d6.6741999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb97f3d3254589%3A0xa7e669360892446a!2sPIZZAMAN%20CHICKENMAN%20SANTASI!5e0!3m2!1sen!2sgh!4v1696513243069!5m2!1sen!2sgh",
   },
   {
     id: 10,
     location: "Fawoade Branch",
     btn: "Read More",
-    map: "",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15847.556917722557!2d-1.566667!3d6.783333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdbbf36787c3af7%3A0x74cd35bcb92b8eb6!2sPizzaMan%20Chickenman%20-%20Fawoade!5e0!3m2!1sen!2sgh!4v1696513115686!5m2!1sen!2sgh",
   },
 ];
 
