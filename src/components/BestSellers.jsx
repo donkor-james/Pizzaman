@@ -1,42 +1,31 @@
 import React from 'react'
 import sellers from './../assets/truck.jpg'
 import SellersData from '../Data/Sellers'
+import Underline from './Underline'
+import  menu  from '../assets/menu.pdf'
+import { Link } from 'react-router-dom'
+
 const BestSellers = () => {
   return (
-    <div className='relative  pb-20'>
-      <div className="absolute top-0 left-0 h-full w-full  overflow-x-hidden"
-        style={{
-            backgroundImage: `url(${sellers})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-
-        
-        }}
-        >
-     
-
-       
-       </div>
-       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
+    <div className='relative  mt-10 pb-20 px-10'>
           <div className='relative flex flex-col justify-center items-center pt-20'>
-            <h4 className='font-custom font-bold text-6xl text-white'>Best Sellers</h4> 
-            <div className='relative flex flex-row gap-10 justify-center pt-10'>
+            <h4 className='font-custom font-bold md:text-6xl text-5xl text-black pb-5 border-b-2 border-b-[#e93e21]'>Best Sellers</h4> 
+           
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 justify-center pt-10'>
               {SellersData.map(seller => (
-                <div className='' key={seller.id} >
-                  <img src={seller.img} alt="" className='h-60 w-64 object-cover rounded-sm'/>
-                  <div className='flex flex-col justify-center items-center'>
-                    <span className='text-white  text-2xl pt-3'>{seller.title}</span>
-                    <span className='text-white font-bold text-2xl pt-2'>${seller.price}</span>
-                    <button className='text-red-500 border border-red-600 px-5 rounded-sm py-2 mt-5 hover:bg-red-600 hover:text-white hover:transition-all '>Order Now</button>
-                  </div>
-                  
+                <div className='mt-10 shadow-card rounded-md overflow-hidden flex flex-col gap-5' key={seller.id} >
+                <div className='w-full h-48 overflow-hidden'>
+                     <img src={seller.img} alt="" />
+                </div>
+                 <Link to="/contact-us" className="bg-primary text-white px-3 py-2 mx-4 text-center block mb-5 hover:opacity-90">
+                    Order Now
+                 </Link>
+
                 </div>
               ))}
               
-
             </div>
-            <button className="px-6 py-3 mt-20 bg-red-700 text-white rounded hover:bg-red-600 font-bold border-b-4 border-solid border-green-600">SEE TODAY'S MENU</button>
+            <a href={menu} className="px-6 py-3 mt-20 bg-primary text-white hover:opacity-90 font-bold">SEE TODAY'S MENU</a>
           </div>
     </div>
   )

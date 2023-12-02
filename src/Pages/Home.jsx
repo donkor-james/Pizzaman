@@ -3,9 +3,11 @@ import Hero from "../components/Hero";
 import Story from "../components/Story";
 import BestSellers from "../components/BestSellers";
 import Menu from "../components/Menu";
-import Footer from "../components/Footer";
 import Counting from "../components/Counting";
 import Gallery from "../components/Gallery";
+import Shop from "../components/Shop";
+import ScrollUp from "../Components/ScrollUp";
+import Footer1 from "../Components/Footer1";
 
 const Home = () => {
   return(
@@ -13,10 +15,12 @@ const Home = () => {
     <Hero/>
     <Counting/>
     <Story/>
+    <Shop/>
     <BestSellers/>
     <Gallery/>
     <Menu/>
-    <Footer/>
+    <Footer1/>
+    <ScrollUp />
    </>
     
     

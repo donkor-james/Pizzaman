@@ -1,10 +1,11 @@
-import NavBar from "../Navbar";
+import NavBar from "../Navbar2";
 import '../../../src/index.css'
 import Accra from "../Accra/Accra";
 import Kumasi from "../Kumasi/Kumasi";
 import Trucks from "../Trucks/Trucks";
 import { useState } from "react";
-import Footer from "../Footer";
+import Footer from "../Footer1";
+import { branche_hover } from "../../assets";
 
 const Branches = () =>
 {
@@ -31,16 +32,19 @@ const Branches = () =>
     return (
         <>
 
-            <header className="branches flex flex-col h-[27rem]">
-                <div>
-                    <NavBar />
-                </div>    
-                <div className="branch_text text-center mt-14">
-                    <div className=" text-4xl text-white">
-                        Our Branches
-                    </div>
-                </div>
-            </header>
+        <NavBar />
+        <div
+          className="w-full h-96 flex justify-center items-center"
+          style={{
+            backgroundImage: `url(${branche_hover})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <h1 className="text-5xl text-white">Our Branches</h1>
+        </div>
+
 
             <div className="flex mb-32 justify-center">
                 <div className={hideAccra}>
@@ -52,7 +56,7 @@ const Branches = () =>
                 <div className={hideTrucks}>
                     <Trucks displayAccra={displayAccra} displayKumasi={displayKumasi} displayTrucks={displayTrucks}/>
                 </div>
-            </div >
+            </div>
 
             <div>
                 <Footer />

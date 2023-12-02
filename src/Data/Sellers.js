@@ -1,31 +1,31 @@
-import jollof from '../assets/jollof.jpg'
-import orange from '../assets/orange.jpg'
-import plantain from '../assets/plantain.jpg'
-import pizza from '../assets/pizza.jpg'
+import friedrice from '../assets/pizza/friedrice5.jpg'
+import orange from '../assets/pizza/yam2.jpg'
+import plantain from '../assets/pizza/jollof(bucket).jpg'
+import noodle from '../assets/pizza/NOODLES.jpg'
 
 const SellersData = [
     {
         id:1,
-        img:jollof,
-        title:'Pizzza Margherita',
+        img:friedrice,
+        title:'Drums 8PCS',
         price:'11.90',
     },
     {
         id:1,
         img:orange,
-        title:'Pizzza Margherita',
+        title:'Yam Chips + 3 Wings',
         price:'11.90',
     },
     {
         id:1,
         img:plantain,
-        title:'Pizzza Margherita',
+        title:'Jollof Mini Bucket',
         price:'11.90',
     },
     {
         id:1,
-        img:pizza,
-        title:'Pizzza Margherita',
+        img:noodle,
+        title:'Kersame Pizza',
         price:'11.90',
     },
 ]

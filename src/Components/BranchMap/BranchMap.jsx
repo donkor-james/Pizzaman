@@ -1,24 +1,32 @@
 import Accra from "../Accra/Accra";
-import NavBar from "../Navbar";
-import Footer from "../Footer";
+import NavBar from "../Navbar2";
+import Footer from "../Footer1";
 import Envelope from '../../assets/envelope.png'
 import Time from '../../assets/time.png'
 import Phone from '../../assets/telephone.png'
+import { branche_hover } from "../../assets";
+import Navbar2 from "../Navbar2";
 
 const BranchMap = ({}) => {
     const map = sessionStorage.getItem("map")
     const loc = sessionStorage.getItem("loc")
     return(
         <>
+        <Navbar2 />
         <div className=" bg-white">
-            <header className="map flex flex-col items-center h-[350px] bg-slate-600">
-                <div className="-mt-1">
-                    <NavBar />
-                </div>
-                <div className=" flex items-center mt-6">
-                    <div className=" text-4xl text-white">{loc}</div>
-                </div>
-            </header>
+        <div
+        className="w-full h-96 flex justify-center items-center"
+        style={{
+          backgroundImage: `url(${branche_hover})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <h1 className="text-5xl text-white">
+          {loc}
+        </h1>
+      </div>
             <div className=" flex justify-center bg-white mt-20 mb-28 ">
                 <div className=" flex flex-wrap-reverse flex-col-reverse w-[85vw] md:w-full md:flex-row gap-10 mx-10">
                     <div className="b_wrapper flex h-[285px] md:h-64 pt-4 px-2 bg-slate-100">

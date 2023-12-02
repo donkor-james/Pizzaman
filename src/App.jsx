@@ -1,34 +1,29 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import Services from './Components/Branches/Branches'
-import './App.css'
-import { NavLink } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import About from './Pages/About'
+import Team from './Pages/Team'
+import Member from './Pages/Member'
+import Home from './Pages/Home'
 import Branches from './Components/Branches/Branches'
 import Contact from './Pages/Contact/Contact'
-import Home from './Pages/Home'
 import BranchMap from './Components/BranchMap/BranchMap'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+    <>
       <Router>
         <Routes>
-          <Route exact path='/branches' element={<Branches/>}/>
-        </Routes>
-
-        <Routes>
+        <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/about-us' element={<About/>}/>
+          <Route exact path='/our-team' element={<Team/>}/>
+          <Route exact path = '/team-member/:slug' element = {<Member />} />
+          <Route exact path='/our-branches' element={<Branches/>}/>
           <Route exact path='/map' element={<BranchMap/>}/>
-        </Routes>
-        <Routes>
-          <Route exact path='/contact' element={<Contact /> } />
-        </Routes>
-        
-        <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/contact-us' element={<Contact /> } />
         </Routes>
       </Router>
+
+    </>
   )
 }
 
